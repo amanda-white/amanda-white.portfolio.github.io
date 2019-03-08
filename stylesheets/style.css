@@ -1,0 +1,84 @@
+/*** typography ***/
+h1 {
+  color:#12344B;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+h2 {
+  color:#12344B;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  color:#12344B;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+h4 {
+  color:#12344B;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+}
+h5 {
+  color:#12344B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 35px;
+}
+h6 {
+  color:#12344B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+}
+p {
+  color:#12344B;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+
+/***sections***/
+nav {
+  background-color: #FFFCF5;
+
+}
+
+.copywright {
+  color: #12344B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: center;
+}
+
+/***icon styling***/
+.fa-linkedin, .fa-envelope-square{
+  color: black;
+}
