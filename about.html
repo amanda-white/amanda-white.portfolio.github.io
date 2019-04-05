@@ -17,65 +17,76 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700" rel="stylesheet">
 
       <!-- Font Awesome -->
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
+
     <div class="container">
 
-    <nav class="menu-bar" id="myMenuBar">
-      <a href="index.html">
-        <img class="logo" src="images/logo.jpg" alt="Logo"/>
-      </a>
-      <div class="menu-container">
-          <a class="active" href="index.html">WORK</a>
-          <a href="about.html" class="hover">ABOUT</a>
-          <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">
+          <img class="logo" src="images/logo.jpg" alt="Logo"/>
+        </a>
+        <a class="hover" href="index.html">WORK</a>
+        <a href="about.html" class="hover">ABOUT</a>
+        <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myMenuBar");
-      if (x.className === "menu-bar") {
-        x.className += "responsive";
-      } else {
-        x.className = "menu-bar";
-      }
-    }
-    </script>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
 
-    <section class="hero-section">
-      <img src="images/hiking.JPG" alt="Headshot of me" class="responsive"/>
-    </section>
+      <div="about-hero">
+    </div>
+      <section>
+        <h3>A little bit</h3>
+        <h1>About Me</h3>
+      </section>
+      <section>
+        <div>
+          <h1>A passion for technology</h1>
+          <p>As a young kid, I would stack phone books on the computer desk chair so I could reach my families spare computer to <b>create designs</b> with Microsoft Paint. In middle school, I would build and decorate houses on The Sims, learning a lot about <b>color theory</b>. In college, I <b>studied abroad</b> in Buenos Aires, Argentina and became fascinated with European style architecture. I desperately wanted to capture the unique facades through <b>photography</b> and used basic photo edits to transform the images. My <b>passion</b> for photography grew and I began capturing the beauty of daily life and became comfortable editing photos for hours at a time.</p>
+        </div>
+        <div>
+          <h1>A passion for understanding people</h1>
+          <p>Throughout my college years, I spent much time in the restaurant industry waiting tables and <b>creating experiences</b> for guests. I had to identify who they were and what they wanted to enhance their dining experience according to their <b>unique needs</b>. Having numerous guests at the same time, I learned the importance of staying calm during stressful situations and how to multitask.
+            <br /> Following graduation, I spent time in sales and customer service learning <b>empathy</b>, communication, and listening skills. In both positions, it was important to <b>discover user needs</b> and propose a solution that solved their problems.</p>
+        </div>
+        <div>
+          <h1>Why I became a designer</h1>
+          <p>Throughout my life, I have <b>depended</b> on web/mobile based technologies to perform daily tasks. I have struggled with poorly structured interfaces, module windows that <b>disrupt workflow</b>, module windows with no clear escape and icons with no labels. These examples are only some of the problems that I have experienced with <b>poorly designed</b> products. These struggles made me think… “hey, I can be a better designer; someone who designs with the <b>user needs first</b> and respects those needs to create a product that the user <b>enjoys using</b>”.
+            <br />After that moment of clarity, I realized that user-centered design was the <b>right path</b> for me. My passion for technology and understanding people paired well with my <b>eye for design</b> and love for <b>creating beautiful things</b>. Additionally, while attending University I studied research methods for my Bachelors of Science degree in Communications and fell in love with analyzing data. These passions combined were all skills that a UX Designer needed to succeed, bringing me to embark on the path of becoming a <b>user-focused designer</b>.</p>
+        </div>
+        <div>
+          <h1>My hobbies</h1>
+          <p>Outside of design, I am passionate about maintaining a <b>healthful lifestyle</b> and I find much enjoyment in healthy cooking, practicing <b>yoga</b>, and running on the <b>beach</b>. I love trying new things and learned how to surf and snowboard in the past few years. The <b>resturaunt industry</b> led me to appreciate the <b>culinary arts</b> and you can often find me seeking out thoughtfully crafted dishes, <b>artisanal cheese</b> plates and wine.
+            <br /><b>Creativity</b> plays an important role in my life and I craft <b>beautiful things</b> in my spare time.  Some of my favorite hobbies include capturing a <b>beautiful facade</b> or nature scene with my camera, learning how to sketch, melting wax with flowers to make a candle, creating driftwood art or jotting down a few lines of <b>poetry</b> as I am inspired throughout my daily life.</p>
+        </div>
 
 
 
 
-
-
-
-
-
-  <footer>
-    <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
-      <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
-      <ul>
-        <li>
+      <footer class="footer">
+          <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
+            <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
           <a href="https://www.linkedin.com/in/amanda--white/">
-            <i class = " fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fab fa-linkedin-in fa-2x"></i>
           </a>
-        </li>
-        <li>
           <a href="mailto:amandawhite04@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-          <p class="copwright">C. 2019 Amanda White | Designed and Developed by Amanda White</p>
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <p>C. 2019 Amanda White | Designed and Developed by Amanda White</p>
       </footer>
     </div>
   </body>

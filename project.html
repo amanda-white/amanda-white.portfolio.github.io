@@ -17,33 +17,45 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700" rel="stylesheet">
 
       <!-- Font Awesome -->
-         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
 
   <body>
   <div class="container">
-
-    <nav class="menu-bar">
+    <div class="topnav" id="myTopnav">
       <a href="index.html">
         <img class="logo" src="images/logo.jpg" alt="Logo"/>
       </a>
-      <div class="menu-container">
-          <a class="hover" href="index.html">WORK</a>
-          <a href="about.html" class="hover">ABOUT</a>
-          <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
-      </div>
-    </nav>
+      <a class="hover" href="index.html">WORK</a>
+      <a href="about.html" class="hover">ABOUT</a>
+      <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
 
-    <section id="pothos-hero">
 
+    <section>
+      <img id="pothos-hero" src="images/pothos_mockup.jpg" alt="Pothos Mockup"/>
     </section>
 
     <section class="white">
       <h1>Pothos</h1>
         <h5 id="pronunciation">(po-thos)</h5>
-          <p class="body">A cloud-based <b>project management</b> application that provides users with a convenient way to <b>collaboratively</b> manage projects. Pothos targets <b>creative-minded</b> students and working professionals that enjoy <b>working visually</b> with their projects using a simple, intuitive interface.</p>
+          <p id="project-overview">A cloud-based <b>project management</b> application that provides users with a convenient way to <b>collaboratively</b> manage projects. Pothos targets <b>creative-minded</b> students and working professionals that enjoy <b>working visually</b> with their projects using a simple, intuitive interface.</p>
           <a href="https://www.figma.com/proto/DICRXD5wEQ3uAgyjd7XLjqC3/Pothos-HiFi-Mockup?node-id=172%3A167&viewport=-4%2C486%2C0.0326909&scaling=min-zoom">
             <button class="btn prototype">Prototype</button>
           </a>
@@ -97,15 +109,15 @@
             <li>Zoom</li>
           </ul>
       </section>
-    </section
+    </section>
 
 
     <section class="white">
-      <div class="prob_solution">
+      <div class="column_one">
         <h3>Problem</h3>
         <p>In the realm of project management applications, there was much room for <b>growth</b>. Users face major frustrations with the most popular product management applications. They desperately need better <b>collaboration tools</b>, a <b>friendlier interface</b>, and <b>creative customization options</b>.</p>
       </div>
-      <div class="prob_solution">
+      <div class="column_two">
         <h3>Solution</h3>
         <p>Pothos aims to create a <b>simple</b> and user-friendly experience for users looking to <b>creatively manage projects</b>. Collaboration is made easy with <b>built-in chat</b>, content <b>comment sections</b>, and share links. Content is customizable, both in size and look and <b>visually appealing project cards</b> have personalizable images.</p>
       </div>
@@ -118,9 +130,11 @@
     <section class="blue">
       <h3>Competitive Analysis</h3>
         <p>I started by looking at some of the top <b>project management</b> applications used today</p>
-          <img src="images/trello_icon.jpg" alt="Trello Icon"/>
-          <img src="images/evernote_icon.png" alt="Evernote Icon"/>
-          <img src="images/pinterest_icon.jpg" alt="Pinterest Icon"/>
+          <div class="row">
+            <img src="images/trello_icon.jpg" alt="Trello Logo" class="competition"/>
+            <img src="images/evernote_icon.png" alt="Evernote Logo" class="competition"/>
+            <img src="images/pinterest_icon.jpg" alt="Pinterest Logo" class="competition"/>
+          </div>
         <p>New competition could <b>enter the marketplace</b> by creating a project that was <b>compatible</b> with teams of any size, with an easy to use interface that took a <b>visual approach</b> to project management with better <b>collaboration tools</b>.</p>
         <a href="https://docs.google.com/document/d/13dXTiQWsHFadfbys2FsUdq2QidZdJwBAiD4dNlNNZuI/edit?usp=sharing">VIEW COMPETITIVE ANAYLSIS</a>
     </section>
@@ -134,7 +148,7 @@
     <section class="blue">
       <h3>Survey Results</h3>
         <h4><b>78%</b> of users depend on project management application tools at least every few days</h4>
-         <img src="images/survey_graph.jpg" alt="Graph"/> <img src="images/survey_key.png" alt="Graph Key"/>
+         <img src="images/mobile/data.jpg" alt="Pothos Data Results: Graph & Key">
         <h4><b>73%</b> of users depend on collaboration features</h4>
         <h4><b>77%</b> of users need to manage work related projects</h4>
         <h4><b>68%</b> of users share documents</h4>
@@ -146,10 +160,10 @@
       <h3>User Personas</h3>
         <p>The users range from student to <b>working professionals</b> from the ages of 21 and 59. Though the application can be used for personal projects, educational projects and <b>professional projects</b> will be the main motivator for the Pothos user. The users will have goals such as <b>real-time collaboration</b>, to share files, accessing content on any device, creating and editing to-do lists and <b>commenting on files</b>.</p>
 
-      <div class="nathan">
+      <div class="persona">
         <img src="images/nathan.jpg" alt="Photograph of Nathan"/>
         <h5><b>Nathan Lewis</b></h5>
-        <p><c>SOFTWARE ENGINEER, 37 YEARS OLD<c/></p>
+        <p class="center">SOFTWARE ENGINEER, 37 YEARS OLD</p>
             <p><b>GOALS</b></p>
             <ul class="goals">
               <li>Create and edit to-do lists</li>
@@ -164,10 +178,10 @@
             </ul>
         </div>
 
-        <div class="billy">
+        <div class="persona">
           <img src="images/billy.jpg" alt="Photograph of Billy"/>
           <h5><b>Billy Wright</b></h5>
-          <p>UNIVERSITY STUDENT, 19 YEARS OLD</p>
+          <p class="center">UNIVERSITY STUDENT, 19 YEARS OLD</p>
             <p><b>GOALS</b></p>
               <ul class="goals">
                 <li>Real-time collaboration with peers</li>
@@ -182,10 +196,10 @@
               </ul> 
           </div>
 
-          <div class="mary">
+          <div class="persona">
             <img src="images/mary.jpg" alt="Photograph of Mary"/>
             <h5><b>Mary Frank</b></h5>
-            <p>CLIENT OPERATIONS ANAYLIST, 27 YEARS OLD</p>
+            <p class="center">CLIENT OPERATIONS ANAYLIST, 27 YEARS OLD</p>
               <p><b>GOALS</b></p>
                 <ul class="goals">
                   <li>Place to collect content</li>
@@ -246,26 +260,28 @@
         </div>
 
         <section class="white">
-          <h3>Research & Sketching</h3>
-            <img src="images/branding_list.png" alt="Brand List Making"/>
-            <img src="images/logo_sketches.png" alt="Logo Sketches"/>
-              <p>Pothos, a type of <b>ivy</b>, is a sturdy plant that <b>grows</b> well with the <b>right conditions"</b>. Being that the major paint point was addressing collaboration issues, Pothos was an <b>analogy</b> to create the right conditions for better <b>project success</b>. Tag-lines could be, “nourish your projects”, “grow your ideas”, <b>“grow your project”</b>.</p>
+          <div>
+            <h3>Research & Sketching</h3>
+              <img src="images/branding_list.png" alt="Brand List Making"/>
+              <img src="images/logo_sketches.png" alt="Logo Sketches"/>
+                <p>Pothos, a type of <b>ivy</b>, is a sturdy plant that <b>grows</b> well with the <b>right conditions"</b>. Being that the major paint point was addressing collaboration issues, Pothos was an <b>analogy</b> to create the right conditions for better <b>project success</b>. Tag-lines could be, “nourish your projects”, “grow your ideas”, <b>“grow your project”</b>.</p>
 
-              <br />
+          </div>
 
-          <h3>Moodboard</h3>
-            <img src="images/moodboard.jpg" alt="Pothos Moodboard"/>
-              <p>Pothos is easy-going, dedicated, <b>collaborative</b>, open minded, relaxed and creative.</p>
+          <div class="section-container">
+            <h3>Moodboard</h3>
+              <img src="images/moodboard.jpg" alt="Pothos Moodboard"/>
+                <p>Pothos is easy-going, dedicated, <b>collaborative</b>, open minded, relaxed and creative.</p>
+          </div>
 
-              <br />
-
-          <h3>Style Guide</h3>
-            <img src="images/primary_logo.jpg" alt="Primary Pothos Logos"/>
-            <img src="images/second_logo.png" alt="Secondary Pothos Logos"/>
-              <br />
-            <img src="images/colors.jpg" alt="Pothos Color Palette"/>
-              <p>AmstervarAlpha Default is the selected brand typeface for the <b>artsy softness</b>, yet the serfs add a bit of <b>structure</b>, extending brand reach to a wider audience. The logo is <b>refined</b>, minimalistic. The color palette is light with pastel tones that pair well with selected, stronger tones to establish <b>trustworthiness</b> and <b>approachability</b>.</p>
-                <a href="https://drive.google.com/file/d/1B27dEyI4BOYZXcGuAXLIOp8CqrCv863W/view?usp=sharing">VIEW STYLEGUIDE</a>
+          <div class="section-container">
+            <h3>Style Guide</h3>
+              <img src="images/mobile/primary_logos.png" alt="Primary Pothos Logos"/>
+              <img src="images/mobile/secondary_logos.png" alt="Secondary Pothos Logos"/>
+              <img src="images/mobile/colors.png" alt="Pothos Color Palette"/>
+                <p>AmstervarAlpha Default is the selected brand typeface for the <b>artsy softness</b>, yet the serfs add a bit of <b>structure</b>, extending brand reach to a wider audience. The logo is <b>refined</b>, minimalistic. The color palette is light with pastel tones that pair well with selected, stronger tones to establish <b>trustworthiness</b> and <b>approachability</b>.</p>
+                  <a href="https://drive.google.com/file/d/1B27dEyI4BOYZXcGuAXLIOp8CqrCv863W/view?usp=sharing">VIEW STYLEGUIDE</a>
+          </div>
         </section>
 
         <div class="phases">
@@ -320,23 +336,16 @@
           <p>Overall, this project <b>taught me</b> that you can not test enough nor can you receive enough feedback. Pothos turned out to be as beautifully designed as it was because I continued to search for feedback, would test with users, and have the design critiqued. I also <b>learned</b> that it is important to be both creative and flexible during the design process. Getting hung up on how something should look or function can hold you back and <b>iterating</b> is extremely important.</p>
       </section>
 
-      <footer>
-        <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
-          <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/amanda--white/">
-                  <i class = " fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:amandawhite04@gmail.com">
-                  <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            <p class="copwright">C. 2019 Amanda White | Designed and Developed by Amanda White</p>
+      <footer class="footer">
+          <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
+            <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
+          <a href="https://www.linkedin.com/in/amanda--white/">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+          <a href="mailto:amandawhite04@gmail.com">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <p>C. 2019 Amanda White | Designed and Developed by Amanda White</p>
       </footer>
-    </div>
   </body>
 </html>

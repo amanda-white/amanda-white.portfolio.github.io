@@ -17,64 +17,50 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700" rel="stylesheet">
 
       <!-- Font Awesome -->
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
 
     <div class="container">
 
-    <nav class="menu-bar" id="myMenuBar">
-      <a href="index.html">
-        <img class="logo" src="images/logo.jpg" alt="Logo"/>
-      </a>
-      <div class="menu-container">
-          <a class="active" href="index.html">WORK</a>
-          <a href="about.html" class="hover">ABOUT</a>
-          <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">
+          <img class="logo" src="images/logo.jpg" alt="Logo"/>
+        </a>
+        <a class="hover" href="index.html">WORK</a>
+        <a href="about.html" class="hover">ABOUT</a>
+        <a href="mailto:amandawhite04@gmail.com" class="hover">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
 
-  <!---<div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
-
-
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myMenuBar");
-      if (x.className === "menu-bar") {
-        x.className += "responsive";
-      } else {
-        x.className = "menu-bar";
-      }
-    }
-    </script>
-
-
-
-
-
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
 
 
   <section class="hero-section">
     <div class="hero-copy">
-      <h1 class="hero-header">Amanda White</h1>
+      <h1 class="hero-header">Amanda White |</h1>
       <h3 class="h2-header">PRODUCT DESIGNER</h3>
-      <span class="typer" id="main" data-words="I validate my design decisions with evidence...,I am constantly learning and teaching myself new design skills...,I want to be able to code my own designs...,Figma is my favorite design tool...,I believe that human centered design improves user experiences...,I want to learn how to create vector illustration art...,I am a user advocate...,I love identifying and solving user problems..." data-delay="100" data-deleteDelay="500"></span>
-      <span class="cursor" data-owner="main"></span>
-    <div class="location">
-      <h5><img class="placeholder" src="images/placeholder.png" alt="Placeholder icon"/> SF Bay Area</h5>
-    </div>
+
+      <div id="typer">
+        <span class="typer" id="main" data-words="I validate my design decisions with evidence...,I am constantly learning and teaching myself new design skills...,I want to be able to code my own designs...,Figma is my favorite design tool...,I believe that human centered design improves user experiences...,I want to learn how to create vector illustration art...,I am a user advocate...,I love identifying and solving user problems..." data-delay="100" data-deleteDelay="500"></span>
+        <span class="cursor" data-owner="main"></span>
+      </div>
+      <div class="location">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <h5>SF Bay Area</h5>
+      </div>
   </div>
       <img class="hero-image" src="images/headshot.jpg" alt="Headshot"/>
     </div>
@@ -96,7 +82,7 @@
 
       <div class="photography">
         <h3>PHOTOGRAPHY</h3>
-          <h5>View The World Through My Lense</h5>
+          <h5>View The World Through My Lens</h5>
             <h6>A collection of my travels and adventure pursuits.</h6>
               <img class="project_image" src="images/vineyard.jpg" alt="Chardonnay Vines"/>
               <a href="photos.html">
@@ -105,23 +91,17 @@
      </div>
   </section>
 
-  <footer>
-    <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
-      <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/amanda--white/">
-            <i class = " fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:amandawhite04@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-          <p class="copwright">C. 2019 Amanda White | Designed and Developed by Amanda White</p>
-      </footer>
+  <footer class="footer">
+      <h3>Do you like what you're seeing?<br />Let's get in touch!</h3>
+        <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
+      <a href="https://www.linkedin.com/in/amanda--white/">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="mailto:amandawhite04@gmail.com">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <p>C. 2019 Amanda White | Designed and Developed by Amanda White</p>
+  </footer>
     </div>
   </body>
 </html>
