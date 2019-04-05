@@ -78,9 +78,11 @@ html{
 /***ABOUT PAGE***/
 
 div .about-hero {
-  background-image: : url(../images/sf-headshot.jpg);
+  background: url("../images/sf-headshot.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  height: 50rem;
+  max-width: auto;
 }
 
 /***PHOTO PAGE***/
@@ -89,10 +91,17 @@ div .about-hero {
 }
 
 .photos-hero {
-  background: rgba(231, 213, 185, 0.25);
-  background-image: url(images/bodyshot.jpg);
+  background-image: url("../images/bodyshot.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  height: 120rem;
+  max-width: auto;
+}
+
+#overlay {
+  background: linear-gradient(0deg, rgba(231, 213, 185, 0.25), rgba(231, 213, 185, 0.25));
+  height: 100%;
+  width: 100%;
 }
 
 /***POTHOS***/
@@ -430,6 +439,7 @@ a {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 5.5rem;
+  text-decoration: none;
 }
 
 img {
