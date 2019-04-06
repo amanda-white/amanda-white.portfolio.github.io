@@ -8,6 +8,8 @@ html{
 
 .container {
 
+
+
 }
 
 
@@ -77,8 +79,8 @@ html{
 
 /***ABOUT PAGE***/
 
-div .about-hero {
-  background: url("../images/sf-headshot.jpg");
+.about-hero {
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   height: 50rem;
@@ -91,37 +93,22 @@ div .about-hero {
 }
 
 .photos-hero {
-  background-image: url("../images/bodyshot.jpg");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/hiking.JPG");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  height: 120rem;
+  height:65rem;
   max-width: auto;
 }
-
-#overlay {
-  background: linear-gradient(0deg, rgba(231, 213, 185, 0.25), rgba(231, 213, 185, 0.25));
-  height: 100%;
-  width: 100%;
-}
-
 /***POTHOS***/
 /***hero***/
 .pothos-hero {
   background-image: url("../images/pothos_mockup.jpg");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-
+  background-repeat: no-repeat;
+  height: 50rem;
+  max-width: auto;
 }
 
 /***overview***/
-#pothos-hero {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-}
 
 .box {
   align-items: center;
@@ -178,19 +165,30 @@ div .about-hero {
 }
 
 .column_one {
+  float:left;
   padding-bottom: 5%;
 }
 
 .column_two {
+  float: right;
   padding-bottom: 5%
 
 }
 
+.roles {
 
-/***IMAGES***/
-.detail {
-  margin-bottom: 3.5rem;
 }
+
+.responsibilities {
+
+}
+
+.tools {
+
+}
+
+
+
 
 /***user personas***/
 .persona {
@@ -218,13 +216,24 @@ div .about-hero {
 /***competive anlys images***/
 .competition {
   flex: 33.33%;
-  height:4.3rem;
+  max-height:4.3rem;
   padding: 0%;
-  width: 6.5rem;
+  max-width: 10.5rem;
 }
 
 .row {
   display: flex;
+}
+
+a:hover {
+  background-color: #4148C5;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#competitive-an {
+
+
 }
 
 
@@ -237,6 +246,11 @@ div .about-hero {
 
 
 /***SHARED COMPONENTS***/
+img {
+  height: auto;
+  max-width:100%;
+  padding: 5%;
+}
 
 
 
@@ -257,8 +271,8 @@ div .about-hero {
 .btn:hover {
   background-color: #4148C5;
   color: white;
-
 }
+
 
 
 
@@ -277,34 +291,18 @@ div .about-hero {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
+  line-height: 5.5rem;
   padding: 14px 16px;
   text-align: center;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  color: #4148C5;
-  }
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  color: #159AB5;
-  font-size: 3.8rem;
-  display: none;
-}
-
-.topnav .hover {
-  background-color: rgba(18, 52, 75, 0.75);
-  border-bottom: thin solid white;
-  color: #ffffff;
-  font-weight: 400;
+  background-color: transparent;
+  border-bottom: medium solid #7CBAE0;
+  color: #7CBAE0;
+  font-weight: 700;
   text-align: center;
-
 }
 
 .logo {
@@ -313,20 +311,10 @@ div .about-hero {
   vertical-align: middle;
 }
 
-a {
-  background-color: transparent;
-  margin:auto;
-}
-
-
-
 a.active {
-  color:#159AB5
+    color: #4148C5;
 }
 
-a:hover {
-  color: #4148C5;
-}
 
 
 /***Footer***/
@@ -348,6 +336,15 @@ footer {
   padding-top: 3rem;
   text-align: center;
 }
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color: transparent;
+}
+
 /***icon styling***/
 i {
   color: #12344B;
@@ -416,7 +413,7 @@ p {
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 3.5rem;
-  padding-top: 5%;
+  padding-top: 2%;
   text-align: left;
 }
 
@@ -439,14 +436,11 @@ a {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 5.5rem;
-  text-decoration: none;
 }
 
-img {
-  height: auto;
-  max-width:100%;
-  padding: 5%;
-}
+
+
+
 
 
 
@@ -468,17 +462,13 @@ img {
     float: right;
     display: block;
   }
-
   .column_one {
     float: left;
   }
-
   .column_two {
     float: right;
-
   }
 }
-
 @media screen and (max-width: 600px) {
   .menu-bar.responsive {position:relative;}
   .menu-bar.responsive .icon{
@@ -492,10 +482,8 @@ img {
     text-align: left;
   }
 }
-
 @media only screen and (min-width: 768px) {
 }
-
 @media only screen and
 ***/
 
