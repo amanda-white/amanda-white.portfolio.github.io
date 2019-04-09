@@ -16,16 +16,30 @@ html{
 
 /***HOMEPAGE***/
 /***hero section***/
-.hero-copy {}
+#hero-copy h1, h3{
+  display: inline;
+
+}
+
+#hero-copy h3 {
+  font-weight: 400;
+}
 
 .hero-section{
   background: rgba(124, 186, 224, 0.1);
+  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  display: inline-block;
+  height: 50rem;
   line-height: 1.6rem;
-  padding: 20px;
-  text-align: left;
+  max-width: auto;
+  padding-left: 4rem;
+  padding-top: 8rem;
 }
+
+.hero-image {
+
+}
+
 
 .location {
   display: inline;
@@ -35,12 +49,7 @@ html{
 
 .location i {
   color: #159AB5;
-}
-
-.heroimage {
-  background-image:url("images/pothos_mockup.jpg");
-  width: 100%;
-
+  padding-left: 0rem;
 }
 
 
@@ -54,6 +63,14 @@ html{
   text-align: left;
 }
 
+.typer#location, h5 {
+  display:inline;
+
+}
+
+#my-work h1, h3 {
+  display:grid;
+}
 
 .pothos {
   background-color: #ffffff;
@@ -87,6 +104,19 @@ html{
   max-width: auto;
 }
 
+.about h1 {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.about p {
+  padding-left: 3rem;
+  padding-right:3rem;
+}
+
+.centered {
+  text-align: center;
+}
 /***PHOTO PAGE***/
 .photo-gallery {
   display: inline-block;
@@ -405,17 +435,23 @@ h6 {
   font-style: normal;
   font-weight: normal;
 }
-p {
 
+p {
   color:#12344B;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 3.5rem;
+  margin-bottom: 2rem;
   padding-top: 2%;
   text-align: left;
 }
+
+p + p {
+  margin-bottom: 2rem;
+}
+
 
 b {
   font-weight: 700;
