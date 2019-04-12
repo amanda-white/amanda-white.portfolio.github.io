@@ -420,10 +420,11 @@ img {
 }
 
 .logo {
-  height: inherit;
+  
   margin-left: inherit;
   text-decoration: none;
   vertical-align: middle;
+
 }
 
 a.active {
