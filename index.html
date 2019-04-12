@@ -23,33 +23,33 @@
   <body>
 
     <div class="topnav" id="myTopnav">
-            <a href="index.html">
-              <img class="logo" src="images/logo.jpg" alt="Logo"/>
-            </a>
-            <a class="active" href="index.html">WORK</a>
-            <a href="about.html" class="hover">ABOUT</a>
-            <a href="contact.html" class="hover">CONTACT</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+      <a href="index.html">
+        <img class="logo" src="images/logo.jpg" alt="Logo"/>
+      </a>
+      <a class="active" href="index.html">WORK</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
-           <script>
-          function myFunction() {
-            var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-              }
-            }
-          </script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
 
 
   <div class="page">
 
-  <section class="hero-section">
+  <section id="hero-section" class="flex">
   <div class="hero-container">
     <div class="hero-copy">
       <h1 class="inline">Amanda White |</h1>
@@ -74,9 +74,10 @@
 
   <script src="typer.js"></script>
 
-  <section class="my-work">
+  <section>
+
     <h3 class="h2"><b>MY WORK</b></h3>
-      <div class="pothos">
+      <div id="pothos" class="flex">
         <div class="project-container">
         <h3>POTHOS</h3>
           <h5>Product Design & Branding</h5>
@@ -90,7 +91,7 @@
             </div>
       </div>
 
-      <div class="photography">
+      <div id="photography" class="flex">
         <div class="project-container">
         <h3>PHOTOGRAPHY</h3>
           <h5>View The World Through My Lens</h5>
