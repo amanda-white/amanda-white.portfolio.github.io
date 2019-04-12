@@ -591,6 +591,18 @@ h3#padding {
   }
 
 /***INDEX.HTML***/
+.hero-container {
+  align-items: center;
+  float: left;
+  overflow: auto;
+
+}
+
+.heroimg-container {
+  align-items: center;
+  float: right;
+  overflow-x: auto;
+}
 .project-container {
   align-items: center;
   float: left;
