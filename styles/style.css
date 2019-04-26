@@ -24,7 +24,8 @@ html{
 #hero-section{
   background: rgba(124, 186, 224, 0.1);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
   height: 80rem;
   line-height: 1.6rem;
   max-width: auto;
@@ -77,14 +78,23 @@ html{
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 600px){
+  .hero-image {
+      max-height: 559px;
+      max-width: 440px;
+    }
 
+
+  }
+}
 
 /***ABOUT PAGE***/
 
 .about-hero {
   background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.jpg");
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
   height: 50rem;
   max-width: 100%;
 }
@@ -104,7 +114,8 @@ html{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
     height: 50rem;
     max-width: 100%;
   }
@@ -131,17 +142,79 @@ html{
 
 .photos-hero {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/hiking.JPG");
+  background-color: rgba(124, 186, 224, 0.1);
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
   height:65rem;
   max-width: 100%;
+}
+
+@media screen and min width: 700px) {
+  .photos-hero {
+
+
+
+  }
 }
 /***POTHOS***/
 /***hero***/
 .pothos-hero {
   background-image: url("../images/pothos_mockup.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   height: 50rem;
+  max-width: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .pothos-hero {
+    height: 100rem;
+  }
+
+.persona-flex {
+  align-items: baseline;
+  display: flex;
+}
+
+.vertical-row {
+ Float:left;
+ height: 80rem;
+ width:.5px;
+ background-color: #DADADA;
+}
+
+
+  .goals, .frustrations {
+    max-width: 33rem;
+  }
+
+
+
+  #double li  {
+    display: block;
+    float:left;
+    width:50%;
+   }
+
+}
+
+.body-container {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90rem;
+
+}
+
+.widebody-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: auto;
 }
 
@@ -158,6 +231,65 @@ html{
   flex: 100%;
   max-width: 100%;
 }
+
+/*Survey Results*/
+.survey-data {
+  padding-bottom: 5rem;
+  padding-top: 0rem;
+}
+
+/*Color Palette*/
+
+.color-palette > div{
+  border-radius: 50%;
+  height: 10rem;
+  width:10rem;
+
+
+
+}
+.colcont {
+
+
+}
+
+.col1 {
+  background-color: #FFFFFF;
+
+}
+
+.col2 {
+  background-color: #FBFFFB;
+}
+
+.col3 {
+  background-color: #F1F4F0;
+}
+
+.col4 {
+  background-color: #BDBDBD;
+}
+
+.col5 {
+  background-color: #F2A27C;
+}
+
+.col6 {
+  background-color: #D2E5DB;
+}
+
+.col7 {
+  background-color: #497E68;
+}
+
+.col8 {
+  background-color: #434344;
+}
+
+.col9 {
+  background-color: #FAC7AF;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of one column */
 @media screen and (min-width: 600px) {
@@ -189,7 +321,6 @@ padding-top: 5rem;
 
 
 
-/***section headers***/
 .phases {
   align-items: center;
   background: rgba(18, 52, 75, 0.75);
@@ -251,9 +382,16 @@ padding-top: 5rem;
 
 /***user personas***/
 .persona {
-  padding-top: 4rem;
-
+  border-left: .1rem solid grey;
+  padding: 4rem;
 }
+
+
+h3, p, .persona-intro {
+  max-width: 90rem;
+}
+
+
 
 
 
@@ -261,19 +399,15 @@ padding-top: 5rem;
   text-align: center;
 }
 
-.goals {
+.goals, .frustrations {
   line-height: 2.5rem;
   list-style:unset;
-  list-style-position: inside;
-  padding-bottom: 3rem;
+
   text-align: left;
 }
 
-.frustrations {
-  line-height: 2.5rem;
-  list-style: unset;
-  list-style-position: inside;
-  text-align: left;
+.goals {
+  padding-bottom: 3rem;
 }
 
 /***competive anlys images***/
@@ -420,7 +554,7 @@ img {
 }
 
 .logo {
-  
+
   margin-left: inherit;
   text-decoration: none;
   vertical-align: middle;
@@ -451,13 +585,14 @@ a.active {
     display: block;
     text-align: left;
   }
+
 }
 
 
 
 /***Footer***/
 .footer p {
-  font-size: .75rem;
+  font-size: 1rem;
   padding: 0%;
   position:relative;
   text-align: center;
@@ -520,7 +655,6 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: 3.5rem;
-  padding-top: 3rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -564,9 +698,7 @@ p {
   text-align: left;
 }
 
-p + p {
-  margin-bottom: 2rem;
-}
+
 
 
 b {
@@ -594,6 +726,12 @@ a {
   text-align: center;
 }
 
+ul, li{
+  list-style-position: outside;
+  text-align: left;
+  font-size: 1.6rem;
+
+}
 
 
 
@@ -618,7 +756,7 @@ a {
   h3 {
     font-size: 3.6rem;
     font-weight: 400;
-    padding-top: 13rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
 
@@ -654,10 +792,12 @@ h3#padding {
 
   p {
     font-size: 1.8rem;
-    padding-bottom: 2rem;
+    padding-bottom: .5rem;
   }
-}
 
+.phases {
+  font-size: 4.8rem;
+}
 
 
 .container {
@@ -670,10 +810,34 @@ h3#padding {
 
 /***PROJECT.HTML***/
 .flex {
-  align-items: center;
+
   display: flex;
 }
+
+.prob-solution-flex {
+  align-items: baseline;
+  display: flex;
+
 }
+
+
+
+.flex img {
+  padding-bottom: 0rem;
+}
+
+
+.roles, .responsibilities, .tools {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 43rem;
+}
+
+
+.chart-container {
+  position: relative;
+}
+
 
 
 
@@ -686,9 +850,11 @@ h3#padding {
       #hero-section{
         background: rgba(124, 186, 224, 0.1);
         background-size: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        border-bottom-left-radius: 50% 20%;
+        border-bottom-right-radius: 50% 20%;
         height: 100rem;
         line-height: 1.6rem;
+
         max-width: auto;
         padding-left: 4rem;
         padding-top: 8rem;
