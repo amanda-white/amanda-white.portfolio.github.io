@@ -47,7 +47,6 @@ html{
 }
 
 
-
 .location {
   display: inline;
   justify-content: center;
@@ -70,17 +69,22 @@ html{
   text-align: left;
 }
 
-
+/*Project Section*/
 #pothos {
   background-color: #ffffff;
   padding: 12%;
   text-align: center;
 }
 
-#photography {
-  padding: 12%;
-  text-align: center;
+.projects {
+  display: inline-block;
+margin-left: auto;
+margin-right: auto;
+max-width: 80rem;
 }
+
+
+
 
 
 
@@ -102,6 +106,13 @@ html{
       float:right;
     }
 
+    .white {
+      padding: 20%;
+    }
+
+    .blue {
+      padding: 20%;
+    }
 
 
 
@@ -117,6 +128,11 @@ html{
   border-bottom-right-radius: 50% 20%;
   height: 50rem;
   max-width: 100%;
+}
+
+#photography {
+  padding: 12%;
+  text-align: center;
 }
 
 .about h3 {
@@ -191,6 +207,8 @@ padding-right: 40rem;
 }
 
 @media screen and (min-width: 1200px) {
+
+  /***POTHOS user personas***/
   .pothos-hero {
     height: 100rem;
   }
@@ -204,21 +222,27 @@ padding-right: 40rem;
   }
 
 .persona-flex {
-  align-items: baseline;
+  align-items: stretch;
   display: flex;
 }
 
-.vertical-row {
- Float:left;
- height: 80rem;
- width:.5px;
- background-color: #DADADA;
+p.persona {
+  padding-bottom: 0rem;
+}
+.persona {
+  border-left: .1rem solid grey;
+  padding: 4rem;
+  flex-basis: 600px;
 }
 
+.persona#billy {
+  border-right: .1rem solid grey;
+}
 
-  .goals, .frustrations {
-    max-width: 33rem;
-  }
+.characteristic {
+
+}
+
 
 
 
@@ -274,70 +298,59 @@ element.style {
   max-width: 97rem;
 }
 
-.chart-container {
-  width: 80%;
-  margin: 2rem auto;
-}
+
 /*Color Palette*/
 
-.color-palette  {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+.swatch {
+  display:inline-block;
 }
 
-.color-palette > div{
+.swatch div:first-of-type {
   border-radius: 50%;
   border: .25px solid grey;
-  height: 10rem;
+  height: 100px;
   margin: 2rem;
-  width: 10rem;
-
-
-
-
+  width: 100px;
 }
-p.colcont {
+
+.swatch-text p  {
   text-align: center;
-
 }
 
-
-.col1 {
-  background-color: #FFFFFF;
-
+.swatch-color1 {
+  background: #FFFFFF;
 }
 
-.col2 {
-  background-color: #FBFFFB;
+.swatch-color2 {
+  background: #FBFFFB;
 }
 
-.col3 {
-  background-color: #F1F4F0;
+.swatch-color3 {
+  background: #F1F4F0;
 }
 
-.col4 {
-  background-color: #BDBDBD;
+.swatch-color4 {
+  background: #BDBDBD;
 }
 
-.col5 {
-  background-color: #F2A27C;
+.swatch-color5 {
+  background: #F2A27C;
 }
 
-.col6 {
-  background-color: #D2E5DB;
+.swatch-color6 {
+  background: #D2E5DB;
 }
 
-.col7 {
-  background-color: #497E68;
+.swatch-color7 {
+  background: #497E68;
+}
+.swatch-color8 {
+  background: #434344;
 }
 
-.col8 {
-  background-color: #434344;
-}
-
-.col9 {
-  background-color: #FAC7AF;
+.swatch-color9 {
+  background: #FAC7AF;
 }
 }
 
@@ -433,18 +446,10 @@ padding-top: 5rem;
 
 
 /***user personas***/
-.persona {
-  border-left: .1rem solid grey;
-  padding: 4rem;
+
+.persona-intro {
+  padding-bottom: 10rem;
 }
-
-
-p.persona-intro {
-  max-width: 90rem;
-}
-
-
-
 
 
 .center {
@@ -454,12 +459,11 @@ p.persona-intro {
 .goals, .frustrations {
   line-height: 2.5rem;
   list-style:unset;
-
   text-align: left;
 }
 
-.goals {
-  padding-bottom: 3rem;
+.goals, .frustrations, .motivations {
+  padding: 1rem 1rem;
 }
 
 /***competive anlys images***/
@@ -632,6 +636,8 @@ a.active {
 
 
 @media screen and (max-width: 600px) {
+
+  /*Navigation*/
   .topnav li {display: none;}
   .topnav a.icon {
     float: right;
@@ -651,6 +657,26 @@ a.active {
     text-decoration: none;
   }
 
+.topnav.responsive a {
+  float:none;
+  text-align: left;
+}
+
+/*Pothos Color Palette*/
+.swatch div:first-of-type {
+  border-radius: 50%;
+  border: .25px solid grey;
+  height: 50px;
+  margin: 2rem;
+  width: 50px;
+}
+
+.swatch-text p  {
+  font-size: 1rem;
+  padding:0rem;
+}
+
+.
 
 }
 
@@ -876,18 +902,19 @@ h3#padding {
 }
 
 /***INDEX.HTML***/
-.project-flex {
-
+div.project-flex {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 190rem;
+  padding:0rem;
+  width:80%;
+}
+
+.image-container {
+  padding-right: 0rem;
 }
 
 
 /***PROJECT.HTML***/
 .flex {
-
   display: flex;
 }
 
@@ -909,6 +936,11 @@ h3#padding {
   max-width: 43rem;
 }
 
+.chart-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+}
 
 
 
