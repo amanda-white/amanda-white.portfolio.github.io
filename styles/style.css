@@ -17,13 +17,13 @@ html{
 
 .hero-container {
   width: 75%;
-
 }
 
-.heroimg-container {
-padding-right: 40rem;
-
+.hero-section {
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .hero-copy h1 {
   line-height: 4.8rem;
@@ -119,6 +119,9 @@ padding-right: 40rem;
   max-width: 100%;
 }
 
+.about h3 {
+    padding-top: 5rem;
+  }
 
 @media screen and (min-width: 450px) {
   .about-hero {
@@ -139,20 +142,11 @@ padding-right: 40rem;
 
   }
 
-  .about h3 {
-    padding-top: 10rem;
-  }
 
 
-.about h1 {
-  padding-top: 8rem;
-  text-align: center;
-}
+.heroimg-container {
+padding-right: 40rem;
 
-.about p {
-  padding-left: 3rem;
-  padding-right:3rem;
-  padding-bottom: 10rem;
 }
 
 /***PHOTO PAGE***/
@@ -241,8 +235,12 @@ padding-right: 40rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 90rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 
 }
+
+
 
 .widebody-container {
   display: block;
@@ -271,20 +269,39 @@ padding-right: 40rem;
   padding-top: 0rem;
 }
 
+element.style {
+  max-height: 97rem;
+  max-width: 97rem;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 2rem auto;
+}
 /*Color Palette*/
+
+.color-palette  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .color-palette > div{
   border-radius: 50%;
+  border: .25px solid grey;
   height: 10rem;
-  width:10rem;
+  margin: 2rem;
+  width: 10rem;
 
 
-
-}
-.colcont {
 
 
 }
+p.colcont {
+  text-align: center;
+
+}
+
 
 .col1 {
   background-color: #FFFFFF;
@@ -621,19 +638,19 @@ a.active {
     display: block;
   }
 
-  .topnav.responsive
-  {position: relative;}
-
+  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive li  {
     float: none;
     display: block;
     text-align: left;
+    text-decoration: none;
   }
+
 
 }
 
@@ -696,6 +713,10 @@ h1 {
 
 .h1 {
   padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.h2 {
   padding-top: 4rem;
 }
 h3 {
@@ -801,6 +822,7 @@ ul, li{
 
   .h2 {
     font-size: 4.8rem;
+    padding-top: 10rem;
   }
 
   h3 {
@@ -888,9 +910,7 @@ h3#padding {
 }
 
 
-.chart-container {
-  position: relative;
-}
+
 
 
 
