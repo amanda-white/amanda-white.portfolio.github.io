@@ -26,9 +26,9 @@ html{
 
 
 .hero-copy h1 {
-  line-height: 4.8rem;
   text-align: left;
 }
+
 .hero-copy h3 {
   font-weight: 400;
   text-align: left;
@@ -42,20 +42,26 @@ html{
   height: 80rem;
   line-height: 1.6rem;
   max-width: auto;
-  padding-left: 4rem;
-  padding-top: 8rem;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
 }
+
+
+
 
 
 .location {
   display: inline;
   justify-content: center;
-  padding: .5rem;
+  padding-top:1rem;
+
 }
 
 .location i {
   color: #159AB5;
   padding-left: 0rem;
+  padding-top: 1rem;
 }
 
 
@@ -76,6 +82,7 @@ html{
   text-align: center;
   width: 100%;
 }
+
 
 
 
@@ -236,13 +243,11 @@ p.persona {
   border-right: .1rem solid grey;
 }
 
-.characteristic {
-
-}
 
 
 
 
+/*Roles, Responsibilities, Tools*/
   #double li  {
     display: block;
     float:left;
@@ -251,6 +256,7 @@ p.persona {
 
 }
 
+/*Containers*/
 .body-container {
   display:block;
   margin-left: auto;
@@ -258,9 +264,7 @@ p.persona {
   max-width: 90rem;
   padding-left: 4rem;
   padding-right: 4rem;
-
 }
-
 
 
 .widebody-container {
@@ -270,19 +274,8 @@ p.persona {
   max-width: auto;
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-.column {
-  -ms-flex: 100%;
-  flex: 100%;
-  max-width: 100%;
-}
+
 
 /*Survey Results*/
 .survey-data {
@@ -351,14 +344,6 @@ element.style {
 }
 }
 
-/* Responsive layout - makes a two column-layout instead of one column */
-@media screen and (min-width: 600px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
 
 
@@ -673,10 +658,27 @@ a.active {
   padding:0rem;
 }
 
-.
 
+
+
+ /*Photos page - make one column*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
+}
+/* Responsive layout - makes a two column-layout instead of one column */
+@media screen and (min-width: 600px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
 
 /***Footer***/
@@ -898,6 +900,11 @@ h3#padding {
   max-width: 90rem;
 }
 
+.hero-copy h1 {
+  line-height: 4.8rem;
+}
+
+
 /***INDEX.HTML***/
 div.project-flex {
   align-items: center;
@@ -919,7 +926,14 @@ div.project-flex {
 .prob-solution-flex {
   align-items: baseline;
   display: flex;
+}
 
+.hero-img {
+  padding:0rem;
+}
+
+.hero-section {
+  padding: 8rem;
 }
 
 
@@ -929,9 +943,16 @@ div.project-flex {
 
 
 .roles, .responsibilities, .tools {
+  text-align: center;
   width: 33.33%
-
 }
+
+
+
+p.roles {
+  text-align: center;
+}
+
 
 .chart-container {
   width: 80%;
@@ -951,17 +972,19 @@ div.project-flex {
   @media screen and (min-width: 550px) {
     /***Homepage***/
       #hero-section{
+        align-items: center;
         background: rgba(124, 186, 224, 0.1);
         background-size: cover;
         border-bottom-left-radius: 50% 20%;
         border-bottom-right-radius: 50% 20%;
         line-height: 1.6rem;
-
         max-width: auto;
-        padding-left: 4rem;
-        padding-top: 8rem;
+        padding: 5rem;
       }
 
+.location i {
+  padding-top: 2rem;
+}
 
 
   }
