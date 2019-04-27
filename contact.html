@@ -24,17 +24,18 @@
 
 
 
-      <div class="topnav" id="myTopnav">
-        <a href="index.html">
-          <img class="logo" src="images/logo.jpg" alt="Logo"/>
-        </a>
-        <a class="hover" href="index.html">WORK</a>
-        <a href="about.html" class="hover">ABOUT</a>
-        <a href="contact.html" class="active">CONTACT</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">
+        <img class="logo" src="images/logo.jpg" alt="Logo"/>
+      </a>
+      <a id="menu-right" href="index.html">WORK</a>
+      <a id="menu-right" href="about.html">ABOUT</a>
+      <a id="menu-right" class="active" href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
 
       <script>
       function myFunction() {
@@ -49,19 +50,20 @@
 
   <section class="chat">
     <h1>Want to chat?</h1>
-    <p class="centered">Fill out the form or<br> send me an <a href="mailto:amandawhite04@gmail.com">email</a>.</p>
+    <p class="centered">Fill out the form or send me an <a href="mailto:amandawhite04@gmail.com">email</a>.</p>
 
-  <div>
+  <section class="body-container" id="contact">
     <form action="https://formspree.io/address@email.tld" target="_blank" method="POST">
       <input type="text" name="name" placeholder="Name">
       <input type="email" name="_replyto" placeholder="Email*">
       <textarea name="message" value="Send" placeholder="Message*" style="height:260px;"></textarea>
       <input type="submit" value="Submit">
     </form>
-  </div>
+  </section>
 </section>
 
 <footer class="footer">
+    <h3 class="footer">Do you like what you're seeing?<br />Let's get in touch!</h3>
       <h6>I'm always looking to expand my network,<br />to accept new challenges, or just chat!</h6>
     <a href="https://www.linkedin.com/in/amanda--white/" target="_blank">
       <i class="fab fa-linkedin-in fa-2x"></i>
@@ -71,7 +73,6 @@
     </a>
     <p>© 2019 Amanda White | Designed and Developed by Amanda White</p>
 </footer>
-
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138245526-1"></script>

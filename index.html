@@ -26,9 +26,9 @@
       <a href="index.html">
         <img class="logo" src="images/logo.jpg" alt="Logo"/>
       </a>
-      <a class="active" href="index.html">WORK</a>
-      <a href="about.html">ABOUT</a>
-      <a href="contact.html">CONTACT</a>
+      <a id="menu-right" class="active" href="index.html">WORK</a>
+      <a id="menu-right" href="about.html">ABOUT</a>
+      <a id="menu-right"href="contact.html">CONTACT</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -52,8 +52,8 @@
   <section id="hero-section" class="flex">
   <div class="hero-container">
     <div class="hero-copy">
-      <h1 class="inline">Amanda White</h1>
-      <h3 class="inline">PRODUCT DESIGNER</h3>
+      <h1>Amanda White</h1>
+      <h3>PRODUCT DESIGNER</h3>
     </div>
 
       <div id="typer">
@@ -77,7 +77,7 @@
   <section>
 
     <h3 class="h2"><b>MY WORK</b></h3>
-      <div id="pothos" class="flex">
+      <div id="pothos" class="project-flex">
         <div class="project-container">
         <h3>POTHOS</h3>
           <h5>Product Design & Branding</h5>
@@ -90,22 +90,6 @@
               <img class="project_image" src="images/pothos_dashboard_mackbookair.jpg" alt="Pothos Dashboard Mockup"/>
             </div>
       </div>
-
-      <div id="photography" class="flex">
-        <div class="project-container">
-        <h3>PHOTOGRAPHY</h3>
-          <h5>View The World Through My Lens</h5>
-            <h6>A collection of my travels and<br>adventure pursuits.</h6>
-              <a href="photos.html">
-                <button class="btn photo_gallery">Photo Gallery</button>
-              </a>
-          </div>
-
-          <div class="image-container">
-            <img class="project_image" src="images/vineyard.jpg" alt="Chardonnay Vines"/>
-          </div>
-      </div>
-
 
   </section>
 </div>
@@ -128,7 +112,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-138245526-1');
 </script>
 

@@ -13,12 +13,26 @@ html{
 /***hero section***/
 .inline {
   display: inline;
+}
+
+.hero-container {
+
+  width: 75%;
 
 }
 
+.heroimg-container {
+padding-right: 40rem;
 
+}
+
+.hero-copy h1 {
+  line-height: 4.8rem;
+  text-align: left;
+}
 .hero-copy h3 {
   font-weight: 400;
+  text-align: left;
 }
 
 #hero-section{
@@ -65,28 +79,34 @@ html{
 }
 
 #photography {
-  background-color: #F2F8FC;
   padding: 12%;
   text-align: center;
 }
 
-#photography button {
-  background-color: #F2F8FC;
-}
+
 
 .project button {
   margin-top: 1rem;
 }
 
+
 @media screen and (min-width: 600px){
   .hero-image {
+
       max-height: 559px;
       max-width: 440px;
+
     }
+
+    #menu-right {
+      float:right;
+    }
+
+  
 
 
   }
-}
+
 
 /***ABOUT PAGE***/
 
@@ -99,10 +119,12 @@ html{
   max-width: 100%;
 }
 
+
 @media screen and (min-width: 450px) {
   .about-hero {
     height:110rem;
   }
+
 }
 
 
@@ -118,8 +140,13 @@ html{
     border-bottom-right-radius: 50% 20%;
     height: 50rem;
     max-width: 100%;
+
   }
-}
+
+  .about h3 {
+    padding-top: 10rem;
+  }
+
 
 .about h1 {
   padding-top: 8rem;
@@ -151,14 +178,10 @@ html{
   height:65rem;
   max-width: 100%;
 }
-
-@media screen and min width: 700px) {
-  .photos-hero {
-
-
-
-  }
 }
+
+
+
 /***POTHOS***/
 /***hero***/
 .pothos-hero {
@@ -387,7 +410,7 @@ padding-top: 5rem;
 }
 
 
-h3, p, .persona-intro {
+p.persona-intro {
   max-width: 90rem;
 }
 
@@ -436,12 +459,14 @@ a:hover {
 /***Contact Section***/
 .chat {
   background: rgba(124, 186, 224, 0.1);
-  padding: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
 }
 
 .chat p {
   line-height: 0rem;
-  padding-top: 3.6rem;
+  padding-top: 0rem;
 }
 
 .chat h1 {
@@ -452,10 +477,19 @@ a:hover {
   text-decoration: none;
 }
 
+#contact.body-container {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+
+}
+
 input[type="text"], input[type="email"], textarea {
   border: 1px solid #e2e2e2;
   border-radius: 2px;
   font-family: "Monserrat", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: normal;
   margin: .5rem;
@@ -546,6 +580,7 @@ img {
   border-bottom: medium solid #7CBAE0;
   color: #7CBAE0;
 }
+
 
 
 
@@ -774,13 +809,12 @@ h3#padding {
     font-size: 3rem;
   }
 
-  span.typer{
+  span#main.typer{
     line-height: 3.5rem;
+
   }
 
-  div#typer {
-    padding-top: 2rem;
-  }
+
 
   h5 {
     font-size: 2.4rem;
@@ -805,7 +839,13 @@ h3#padding {
 }
 
 /***INDEX.HTML***/
+.project-flex {
 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 190rem;
+}
 
 
 /***PROJECT.HTML***/
@@ -852,7 +892,6 @@ h3#padding {
         background-size: cover;
         border-bottom-left-radius: 50% 20%;
         border-bottom-right-radius: 50% 20%;
-        height: 100rem;
         line-height: 1.6rem;
 
         max-width: auto;
