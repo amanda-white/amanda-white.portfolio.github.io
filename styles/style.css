@@ -163,7 +163,6 @@ html{
 
 @media screen and (min-width: 800px) {
   .about-hero {
-    background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.jpg");
     background-color: rgba(124, 186, 224,0.1);
     background-size: contain;
     background-repeat: no-repeat;
