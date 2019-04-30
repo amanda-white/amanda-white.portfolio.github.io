@@ -138,7 +138,7 @@ html{
 /***ABOUT PAGE***/
 
 .about-hero {
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.JPG");
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.jpg");
   background-size: cover;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
@@ -163,7 +163,7 @@ html{
 
 @media screen and (min-width: 800px) {
   .about-hero {
-    background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.JPG");
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.jpg");
     background-color: rgba(124, 186, 224,0.1);
     background-size: contain;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ html{
 
 }
 .photos-hero {
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/hiking.JPG");
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/hiking.jpg");
   background-size: cover;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
