@@ -168,10 +168,22 @@ html{
   }
 
 
-
+/*Hero Image*/
 .heroimg-container {
-padding-right: 40rem;
+  display:block;
+  position:relative;
+  z-index: -10;
+}
 
+#overlay {
+  background: rgba(124, 186, 224, .10);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 0;
+    z-index: -5;
 }
 
 /***PHOTO PAGE***/
