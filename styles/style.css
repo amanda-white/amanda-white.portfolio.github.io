@@ -249,6 +249,7 @@ html{
   display: flex;
 }
 
+
 p.persona {
   padding-bottom: 0rem;
 }
@@ -443,7 +444,14 @@ padding-top: 5rem;
 
 }
 
+/*Survey*/
+.survey-data h4, h6 {
+  line-height: 3;
+}
 
+.survey-data h4 {
+  padding-right: .5rem;
+}
 
 
 /***user personas***/
@@ -475,7 +483,9 @@ padding-top: 5rem;
   padding: 0%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 10.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 8.5rem;
 }
 
 .row {
@@ -845,7 +855,7 @@ a {
 
 ul, li{
   list-style-position: outside;
-  text-align: left;
+
   font-size: 1.6rem;
 
 }
@@ -944,6 +954,10 @@ div.project-flex {
   display: flex;
 }
 
+.prob-solution-flex div {
+  padding: 5%;
+}
+
 .hero-img {
   padding:0rem;
 }
@@ -959,6 +973,10 @@ div.project-flex {
 
 
 .roles, .responsibilities, .tools {
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
   text-align: center;
   width: 33.33%
 }
