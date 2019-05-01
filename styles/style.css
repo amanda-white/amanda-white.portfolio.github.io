@@ -30,7 +30,8 @@ html{
 }
 
 .hero-copy h3 {
-  font-weight: 400;
+  font-weight:100;
+  padding-top: 0rem;
   text-align: left;
 }
 
