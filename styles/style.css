@@ -51,12 +51,16 @@ html{
 
 
 .hero-container {
+  margin-left: auto;
   max-width: 40rem;
 
 }
 
-.hero-image {
+.heroimg-container {
   margin-right: auto;
+}
+
+.hero-image {
   max-height: 50rem;
   }
 
