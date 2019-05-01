@@ -49,10 +49,9 @@ html{
   width: 100%;
 }
 
+
 .hero-container {
-  margin: auto;
-  padding:5rem;
-  width: auto;
+  max-width: 40rem;
 
 }
 
@@ -60,7 +59,7 @@ html{
   margin-right: auto;
   max-height: 50rem;
   }
-}
+
 
 
 .hero-copy {
@@ -94,8 +93,8 @@ html{
 }
 
 div#typer {
-  height: 10rem;
-  max-width: 40rem;
+  height: 23rem;
+  max-width: 35rem;
 }
 
 /*Hero Image*/
@@ -127,10 +126,8 @@ img.project-image {
 
 @media screen and (min-width: 600px){
   .hero-image {
-
       max-height: 559px;
       max-width: 440px;
-
     }
 
     .topnav ul {
@@ -978,6 +975,7 @@ div.project-flex {
 
 /***PROJECT.HTML***/
 .flex {
+  align-items: baseline;
   display: flex;
 }
 
