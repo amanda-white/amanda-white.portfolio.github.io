@@ -15,9 +15,6 @@ html{
   display: inline;
 }
 
-.hero-container {
-  width: 75%;
-}
 
 .hero-section {
   margin-left: auto;
@@ -44,8 +41,20 @@ html{
   line-height: 1.6rem;
   max-width: auto;
   margin: auto;
-  padding: 2rem;
   width: 100%;
+}
+
+.hero-container {
+  margin: auto;
+  padding:5rem;
+  width: auto;
+
+}
+
+.hero-image {
+  margin-right: auto;
+  max-height: 50rem;
+  }
 }
 
 
@@ -81,6 +90,11 @@ html{
   text-decoration: none;
 }
 
+div#typer {
+  height: 10rem;
+  max-width: 40rem;
+}
+
 /*Hero Image*/
 .heroimg-container {
   display:block;
@@ -94,9 +108,14 @@ html{
 /*Project Section*/
 #pothos {
   background-color: #ffffff;
-  padding: 12%;
   text-align: center;
-  width: 100%;
+  margin: auto;
+  max-width: 1034px;
+  padding: 5rem;
+}
+
+img.project-image {
+  max-width: 75%;
 }
 
 
@@ -140,10 +159,13 @@ html{
 
 .about-hero {
   background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/sf-headshot.JPG");
-  background-size: cover;
+  background-color: #F2F8FC;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
-  height: 50rem;
+  height: 40rem;
   max-width: 100%;
 }
 
@@ -219,6 +241,7 @@ html{
 
 /***POTHOS***/
 /***hero***/
+/*
 .pothos-hero {
   background-image: url("../images/pothos_mockup.jpg");
   background-repeat: no-repeat;
@@ -227,14 +250,25 @@ html{
   position: relative;
   height: 50rem;
   max-width: auto;
+}*/
+
+.pothos-hero {
+  background-color: #F2F8FC;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:
 }
+
+
 
 @media screen and (min-width: 1200px) {
 
   /***POTHOS user personas***/
+/*
   .pothos-hero {
     height: 100rem;
-  }
+  }*/
 
   .photos-hero {
     height:100rem;
@@ -263,16 +297,11 @@ p.persona {
   border-right: .1rem solid grey;
 }
 
-
-
-
-
-/*Roles, Responsibilities, Tools*/
-  #double li  {
-    display: block;
-    float:left;
-    width:50%;
-   }
+#double li  {
+  display: block;
+  float:left;
+  width:50%;
+ }
 
 }
 
@@ -536,7 +565,7 @@ input[type="text"], input[type="email"], textarea {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: normal;
-  margin: .5rem;
+  margin-top: .5rem;
   padding-bottom: 2rem;
   padding-left: .25rem;
   width: 100%
@@ -603,8 +632,9 @@ img {
 
 /***NAVIGATION***/
 .topnav {
-  background-color: #FFFCF5;
+  background: rgba(124, 186, 224, 0.1);
   overflow: hidden;
+  padding-bottom: 0rem;
 }
 
 .topnav a {
@@ -614,7 +644,7 @@ img {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 5.5rem;
-  padding: 14px 16px;
+  padding: 16px 5rem 12px 0rem;
   text-align: center;
   text-decoration: none;
 }
@@ -625,20 +655,17 @@ img {
   color: #7CBAE0;
 }
 
-
-
-
 .topnav .icon {
   display: none;
 }
 
 .logo {
-
   margin-left: inherit;
   text-decoration: none;
+  padding-left: 5rem;
   vertical-align: middle;
-
 }
+
 
 a.active {
     color: #4148C5;
@@ -727,6 +754,7 @@ a.active {
 footer {
   background-color: #7CBAE0;
   line-height: 1.6rem;
+  margin-top: 5rem;
   padding-top: 3rem;
   text-align: center;
 }
@@ -904,6 +932,7 @@ h3#padding {
 
   span#main.typer{
     line-height: 3.5rem;
+    height: 50rem;
 
   }
 
@@ -966,19 +995,22 @@ div.project-flex {
   padding: 8rem;
 }
 
-
 .flex img {
   padding-bottom: 0rem;
 }
 
 
-.roles, .responsibilities, .tools {
-  align-items: baseline;
+.roles, .responsibilities, .tools, .duration {
   margin-left: auto;
   margin-right: auto;
   padding: 5%;
   text-align: center;
-  width: 33.33%
+
+}
+
+.roles-duration, .responsibilities, .tools {
+  vertical-align: baseline;
+  width: 33.33%;
 }
 
 
@@ -989,8 +1021,8 @@ p.roles {
 
 
 .chart-container {
-  width: 80%;
-  margin: 2rem auto;
+  width: 75%;
+  margin: 10rem auto;
 }
 }
 
@@ -1011,14 +1043,18 @@ p.roles {
         background-size: cover;
         border-bottom-left-radius: 50% 20%;
         border-bottom-right-radius: 50% 20%;
+        display: flex;
+        margin: auto;
         line-height: 1.6rem;
-        max-width: auto;
         padding: 5rem;
       }
 
 .hero-container h1 {
   line-height: 1;
 }
+
+
+
 
 
   }
