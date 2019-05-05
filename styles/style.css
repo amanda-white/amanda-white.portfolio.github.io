@@ -372,11 +372,6 @@ p.persona {
   border-right: .1rem solid grey;
 }
 
-#double li  {
-  display: block;
-  float:left;
-  width:50%;
- }
 
 }
 
@@ -592,11 +587,7 @@ padding-top: 5rem;
   display: flex;
 }
 
-a:hover {
-  background-color: #4148C5;
-  color: #FFFFFF;
-  text-decoration: none;
-}
+
 
 
 
@@ -628,10 +619,6 @@ img {
   padding: 10px 41px;
 }
 
-.btn:hover {
-  background-color: #4148C5;
-  color: white;
-}
 
 
 
@@ -654,17 +641,14 @@ img {
   text-decoration: none;
 }
 
-.topnav a:hover {
-  background-color: transparent;
-  border-bottom: medium solid #7CBAE0;
-  color: #7CBAE0;
-}
+
 
 .topnav .icon {
   display: none;
 }
 
 .logo {
+  border-bottom: medium solid #F1F8FC;
   margin-left: inherit;
   text-decoration: none;
   padding-left: 5rem;
@@ -672,9 +656,8 @@ img {
 }
 
 
-a.active {
-    color: #4148C5;
-}
+
+
 
 
 
@@ -767,9 +750,7 @@ footer {
   text-decoration: none;
 }
 
-.footer a:hover {
-  background-color: transparent;
-}
+
 
 /***icon styling***/
 i {
@@ -1014,8 +995,9 @@ div.project-flex {
 }
 
 .roles-duration, .responsibilities, .tools {
+  margin: auto;
   vertical-align: baseline;
-  width: 33.33%;
+
 }
 
 
