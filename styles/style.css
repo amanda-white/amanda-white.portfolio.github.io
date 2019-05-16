@@ -128,26 +128,7 @@ img.project-image {
 }
 
 
-@media screen and (min-width: 600px){
-  .hero-image {
-      max-height: 559px;
-      max-width: 440px;
-    }
 
-    .topnav ul {
-      display:flex;
-      float:right;
-    }
-
-    .white {
-      padding: 20%;
-    }
-
-    .blue {
-      padding: 20%;
-    }
-
-  }
 
 
 /*************************
@@ -171,37 +152,8 @@ ABOUT PAGE - about.html
     padding-top: 5rem;
   }
 
-@media screen and (min-width: 450px) {
-  .about-hero {
-    height:110rem;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .about-hero {
-    background-color: rgba(124, 186, 224,0.1);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    height: 50rem;
-    max-width: 100%;
-  }
-
-  /***********************************
-        PHOTO PAGE - photos.html
-  ***********************************/
-  .photo-gallery {
-    display: inline-block;
-  }
 
 
-  .photo-gallery img{
-    padding-top: 0rem;
-  }
-
-  }
   .photos-hero {
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("../images/hiking.JPG");
     background-size: cover;
@@ -211,22 +163,7 @@ ABOUT PAGE - about.html
     max-width: 100%;
   }
 
-  @media screen and (min-width: 450px) {
-    .photos-hero {
-      height:80rem;
-    }
-  }
 
-  @media screen and (min-width: 800px) {
-    .photos-hero {
-      background-color: rgba(124, 186, 224,0.1);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 50rem;
-      max-width: 100%;
-    }
-  }
 
 
   #photography {
@@ -314,7 +251,7 @@ ABOUT PAGE - about.html
 
 
 /*********************************
-       POTHOS - project.html
+       POTHOS - pothos.html
 *********************************/
 /*Hero*/
 /*
@@ -337,43 +274,7 @@ ABOUT PAGE - about.html
 }
 
 
-@media screen and (min-width: 1200px) {
 
-  /***POTHOS user personas***/
-/*
-  .pothos-hero {
-    height: 100rem;
-  }*/
-
-  .photos-hero {
-    height:100rem;
-  }
-
-  .about-hero {
-    height:100rem;
-  }
-
-.persona-flex {
-  align-items: stretch;
-  display: flex;
-}
-
-
-p.persona {
-  padding-bottom: 0rem;
-}
-.persona {
-  border-left: .1rem solid grey;
-  padding: 4rem;
-  flex-basis: 600px;
-}
-
-.persona#billy {
-  border-right: .1rem solid grey;
-}
-
-
-}
 
 /*Containers*/
 .body-container {
@@ -619,6 +520,11 @@ img {
   padding: 10px 41px;
 }
 
+.btn:hover {
+  background-color: #4148C5;
+  color: white;
+}
+
 
 
 
@@ -636,10 +542,21 @@ img {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 5.5rem;
-  padding: 16px 5rem 12px 0rem;
+  padding: 16px 2.5rem 12px 2.5rem;
   text-align: center;
   text-decoration: none;
 }
+
+.topnav li:hover {
+  border-bottom: solid medium #159AB5;
+}
+
+
+
+.topnav a.active {
+  color: #159AB5;
+}
+
 
 
 
@@ -651,7 +568,7 @@ img {
   border-bottom: medium solid #F1F8FC;
   margin-left: inherit;
   text-decoration: none;
-  padding-left: 5rem;
+  padding-left: 2.5rem;
   vertical-align: middle;
 }
 
@@ -661,68 +578,9 @@ img {
 
 
 
-@media screen and (max-width: 600px) {
-
-  /*Navigation*/
-  .topnav li {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive li  {
-    float: none;
-    display: block;
-    text-align: left;
-    text-decoration: none;
-  }
-
-.topnav.responsive a {
-  float:none;
-  text-align: left;
-}
-
-/*Pothos Color Palette*/
-.swatch div:first-of-type {
-  border-radius: 50%;
-  border: .25px solid grey;
-  height: 50px;
-  margin: 2rem;
-  width: 50px;
-}
-
-.swatch-text p  {
-  font-size: 1rem;
-  padding:0rem;
-}
 
 
 
-
- /*Photos page - make one column*/
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-}
-/* Responsive layout - makes a two column-layout instead of one column */
-@media screen and (min-width: 600px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
 
 
 /***Footer***/
@@ -733,9 +591,9 @@ img {
   text-align: center;
 }
 
-.footer h3 {
+h3.footer {
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 1.8rem;
   text-transform: none;
   padding-top: 0rem;
 }
@@ -756,8 +614,6 @@ footer {
 i {
   color: #12344B;
   padding: 1rem;
-  padding-top: 3rem;
-
 }
 
 .footer-links {
@@ -881,10 +737,136 @@ ul, li{
 
 
 
-/***MEDIA QUERIES***/
+/****************************
+        MEDIA QUERIES
+*****************************/
+
+
+/*************************/
+
+@media screen and (min-width: 450px) {
+  .about-hero {
+    height:110rem;
+  }
+
+  .photos-hero {
+    height:80rem;
+}
+
+
+
+@media screen and (min-width: 550px) {
+  /***Homepage***/
+    #hero-section{
+      align-items: center;
+      background: rgba(124, 186, 224, 0.1);
+      background-size: cover;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
+      display: flex;
+      margin: auto;
+      line-height: 1.6rem;
+      padding: 5rem;
+    }
+
+.hero-container h1 {
+line-height: 1;
+}
+}
+
+/************************/
+
+
+
+
+@media screen and (min-width: 600px){
+  .hero-image {
+      max-height: 559px;
+      max-width: 440px;
+    }
+
+    .topnav ul {
+      display:flex;
+      float:right;
+    }
+
+    .white {
+      padding: 20%;
+    }
+
+    .blue {
+      padding: 20%;
+    }
+
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+  /************************/
+
+  @media screen and (max-width: 600px) {
+
+    /*Navigation*/
+    .topnav li {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive li  {
+      float: none;
+      display: block;
+      text-align: left;
+      text-decoration: none;
+    }
+
+  .topnav.responsive a {
+    float:none;
+    text-align: left;
+  }
+
+/***POTHOS.HTML***/
+  /*Pothos Color Palette*/
+  .swatch div:first-of-type {
+    border-radius: 50%;
+    border: .25px solid grey;
+    height: 50px;
+    margin: 2rem;
+    width: 50px;
+  }
+
+  .swatch-text p  {
+    font-size: 1rem;
+    padding:0rem;
+  }
+
+
+ /***PHOTOS.HTML***/
+  /*make one column*/
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  }
+
+/***************************/
 
 
 @media only screen and (min-width: 800px) {
+
+/*Typography*/
   h1 {
     font-size: 5.6rem;
   }
@@ -901,28 +883,6 @@ ul, li{
     padding-bottom: 2rem;
   }
 
-h3.footer {
-  line-height: 3.5rem;
-  padding-bottom: 2rem;
-}
-
-h3#padding {
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-}
-
-  h4, span.typer {
-    font-size: 3rem;
-  }
-
-  span#main.typer{
-    line-height: 3.5rem;
-    height: 50rem;
-
-  }
-
-
-
   h5 {
     font-size: 2.4rem;
   }
@@ -936,6 +896,45 @@ h3#padding {
     padding-bottom: .5rem;
   }
 
+/*Footer*/
+h3.footer {
+  line-height: 3.9rem;
+  padding-bottom: 2rem;
+}
+
+i {
+  padding-top: 3rem;
+}
+
+h3#padding {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+/***INDEX.HTML***/
+div.project-flex {
+  align-items: center;
+  display: flex;
+  padding:0rem;
+}
+
+.image-container, .project-container {
+  width: 50%;
+}
+
+h4, span.typer {
+  font-size: 3rem;
+}
+
+span#main.typer{
+  line-height: 3.5rem;
+  height: 50rem;
+}
+
+
+/***POTHOS.HTML***/
+
 .phases {
   font-size: 4.8rem;
 }
@@ -945,20 +944,6 @@ h3#padding {
   max-width: 90rem;
 }
 
-/***INDEX.HTML***/
-div.project-flex {
-  align-items: center;
-  display: flex;
-  padding:0rem;
-
-}
-
-.image-container, .project-container {
-  width: 50%;
-}
-
-
-/***PROJECT.HTML***/
 .flex {
   align-items: baseline;
   display: flex;
@@ -991,57 +976,84 @@ div.project-flex {
   margin-right: auto;
   padding: 5%;
   text-align: center;
-
 }
 
 .roles-duration, .responsibilities, .tools {
   margin: auto;
   vertical-align: baseline;
-
 }
-
-
 
 p.roles {
   text-align: center;
 }
 
-
 .chart-container {
   width: 75%;
   margin: 10rem auto;
 }
+
+/***ABOUT.HTML***/
+.about-hero {
+  background-color: rgba(124, 186, 224,0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  height: 50rem;
+  max-width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-  @media screen and (min-width: 550px) {
-    /***Homepage***/
-      #hero-section{
-        align-items: center;
-        background: rgba(124, 186, 224, 0.1);
-        background-size: cover;
-        border-bottom-left-radius: 50% 20%;
-        border-bottom-right-radius: 50% 20%;
-        display: flex;
-        margin: auto;
-        line-height: 1.6rem;
-        padding: 5rem;
-      }
-
-.hero-container h1 {
-  line-height: 1;
+/***PHOTOS.HTML***/
+.photo-gallery {
+  display: inline-block;
 }
 
+.photo-gallery img{
+  padding-top: 0rem;
+}
 
+.photos-hero {
+  background-color: rgba(124, 186, 224,0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50rem;
+  max-width: 100%;
+}
 
+}
 
+/****************************/
 
+@media screen and (min-width: 1200px) {
+
+  /***POTHOS.HTML***/
+
+  .photos-hero {
+    height:100rem;
   }
+
+  .about-hero {
+    height:100rem;
+  }
+
+.persona-flex {
+  align-items: stretch;
+  display: flex;
+}
+
+
+p.persona {
+  padding-bottom: 0rem;
+}
+.persona {
+  border-left: .1rem solid grey;
+  padding: 4rem;
+  flex-basis: 600px;
+}
+
+.persona#billy {
+  border-right: .1rem solid grey;
+}
+}
