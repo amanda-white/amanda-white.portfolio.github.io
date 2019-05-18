@@ -281,7 +281,7 @@ ABOUT PAGE - about.html
   display:block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90rem;
+  max-width: 100rem;
   padding-left: 4rem;
   padding-right: 4rem;
 }
@@ -294,13 +294,21 @@ ABOUT PAGE - about.html
   max-width: auto;
 }
 
+/*Add max-width to images*/
+.img-max {
+  max-width: 60rem;
+}
 
 
 
 /*Survey Results*/
 .survey-data {
-  padding-bottom: 5rem;
-  padding-top: 0rem;
+  padding: 3rem;
+
+}
+
+.quote {
+  padding: 1rem;
 }
 
 element.style {
@@ -657,7 +665,7 @@ h4 {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 3.5rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -878,10 +886,10 @@ line-height: 1;
 
   h3 {
     font-size: 3.6rem;
-    font-weight: 400;
     padding-top: 3rem;
     padding-bottom: 2rem;
   }
+
 
   h5 {
     font-size: 2.4rem;
@@ -924,7 +932,7 @@ div.project-flex {
 }
 
 h4, span.typer {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 span#main.typer{
@@ -986,11 +994,17 @@ span#main.typer{
 p.roles {
   text-align: center;
 }
-
+/*Survey Data*/
 .chart-container {
   width: 75%;
   margin: 10rem auto;
 }
+
+.quote {
+  padding: 2rem;
+}
+
+
 
 /***ABOUT.HTML***/
 .about-hero {
@@ -1048,12 +1062,8 @@ p.persona {
   padding-bottom: 0rem;
 }
 .persona {
-  border-left: .1rem solid grey;
-  padding: 4rem;
+  padding: 5rem;
   flex-basis: 600px;
 }
 
-.persona#billy {
-  border-right: .1rem solid grey;
-}
 }
