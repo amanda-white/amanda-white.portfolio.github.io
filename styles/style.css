@@ -53,6 +53,7 @@ html{
 .hero-container {
   margin-left: auto;
   max-width: 40rem;
+  padding-left: 2.5rem;
 
 }
 
@@ -756,6 +757,7 @@ ul, li{
 
   .photos-hero {
     height:80rem;
+}
 }
 
 
