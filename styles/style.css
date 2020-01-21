@@ -1003,6 +1003,19 @@ p.roles {
   padding: 2rem;
 }
 
+/***DESIGNREADS.HTML***/
+
+.iteration-flex {
+  align-items: baseline;
+  display: flex;
+}
+
+.iteration-flex div {
+  padding: 2rem;
+  width: 50%;
+}
+
+
 
 
 /***ABOUT.HTML***/
