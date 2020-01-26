@@ -731,7 +731,7 @@ a {
 ul, li{
   list-style-position: outside;
 
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 
 }
 
@@ -798,11 +798,11 @@ line-height: 1;
     }
 
     .white {
-      padding: 20%;
+      padding: 8%;
     }
 
     .blue {
-      padding: 20%;
+      padding: 8%;
     }
 
       .column {
@@ -1064,10 +1064,7 @@ p.roles {
     height:100rem;
   }
 
-.persona-flex {
-  align-items: stretch;
-  display: flex;
-}
+
 
 
 p.persona {
