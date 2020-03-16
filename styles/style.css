@@ -700,6 +700,17 @@ p {
   text-align: left;
 }
 
+p.blockquote {
+  color:#12344B;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
 
 
 
@@ -1014,6 +1025,10 @@ p.roles {
   padding: 2rem;
   width: 50%;
 }
+
+
+/***AUSTINOPERA.HTML***/
+
 
 
 
