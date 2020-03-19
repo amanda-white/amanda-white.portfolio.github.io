@@ -881,6 +881,17 @@ line-height: 1;
 
 /***************************/
 
+/***AUSTINOPERA.HTML***/
+.rotateimg90 {
+  margin-bottom: 6.5rem;
+  margin-top: 6.5rem;
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 
 @media only screen and (min-width: 800px) {
 
